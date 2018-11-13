@@ -79,7 +79,32 @@ h2:after{ /*make what u do after heading 2*/
     margin-bottom: 10px;
     color: #e67e22;
 }
-/*------Buttons------*/
+.icon-small {
+    display: inline-block;
+	width: 30px;
+    font-size: 120%;
+	text-align: center;
+    color: #e67e22;
+	margin-right: 10px;
+	/*secrets to align text and icons*/
+	line-height: 120%;
+	vertical-align: middle;
+}
+.ion-ios-star{
+	margin-top: -2px;
+}
+/*------LINKS------*/
+a:link,a:visited {
+	color: #e67e22;
+	border-bottom: 1px solid #e67e22;
+	text-decoration: none;
+	transition: border-bottom .2s, color .2s;
+}
+a:hover,a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
+}
+/*------BUTTONS------*/
 .btn:link,
 .btn:visited { 
     display: inline-block;
@@ -249,12 +274,12 @@ header {
 .works-step{
     margin-bottom: 50px;
 }
-.works-step:last-of-type{
+.make-space{
     margin-bottom: 70px;
 }
 .works-step div{
+	display: inline-block;
     color: #e67e22;
-    display: inline-block;
     text-align: center;
     height: 55px;
     width: 55px;
@@ -266,9 +291,22 @@ header {
     padding-top: 8px;
     margin-right: 25px;
 }
-
+.btn-app:link,.btn-app:visited {
+	border-bottom: 0;
+}
 .btn-app img{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+/*---------------------------------------------------------*/
+/*CITIES*/
+/*---------------------------------------------------------*/
+.city {
+	overflow: hidden;
+}
+.city img {
+	width:100%;
+	height: auto;
+	margin-bottom: 15px;
 }
